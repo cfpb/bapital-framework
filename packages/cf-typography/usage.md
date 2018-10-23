@@ -1,11 +1,11 @@
-The cf-typography component includes multiple patterns for headings,
+The bf-typography component includes multiple patterns for headings,
 links, lists, and other advanced typographic treatments.
 
-The [`cf-core`](../core) component is a dependency of this component
+The [`bf-core`](../core) component is a dependency of this component
 and has more basic typography patterns.
 
 
-> NOTE: If you use `cf-typography.less` directly,
+> NOTE: If you use `bf-typography.less` directly,
   be sure to run the file through
   [Autoprefixer](https://github.com/postcss/autoprefixer),
   or your compiled Capital Framework CSS will
@@ -65,7 +65,7 @@ variables are located when self-hosting fonts.
 Can be either a relative or absolute path.
 
 ```
-@cf-fonts-path: '/fonts'
+@bf-fonts-path: '/fonts'
 ```
 
 If you want to load fonts from a Fonts.com Web Fonts project,
@@ -78,7 +78,7 @@ otherwise set it to `false` to use the self-hosted font path:
 
 ### Color variables
 
-Color variables referenced in comments are from [cf-core cf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/cf-core/src/cf-brand-colors.less).
+Color variables referenced in comments are from [bf-core bf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/bf-core/src/bf-brand-colors.less).
 
 ```
 // Running text elements

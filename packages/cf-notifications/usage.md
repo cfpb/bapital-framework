@@ -1,10 +1,10 @@
-The cf-notifications component provides notification boxes
+The bf-notifications component provides notification boxes
 for Capital Framework.
 
-[`cf-core`](../cf-core) and
-[`cf-icons`](../cf-icons) components are dependencies of this component.
+[`bf-core`](../bf-core) and
+[`bf-icons`](../bf-icons) components are dependencies of this component.
 
-> NOTE: If you use `cf-notifications.less` directly,
+> NOTE: If you use `bf-notifications.less` directly,
   be sure to run the file through
   [Autoprefixer](https://github.com/postcss/autoprefixer),
   or your compiled Capital Framework CSS will

@@ -1,9 +1,9 @@
 A set of HTML and CSS layout helpers.
 
-[`cf-core`](../cf-core) and [`cf-grid`](../cf-grid) components are
+[`bf-core`](../bf-core) and [`bf-grid`](../bf-grid) components are
 dependencies of this component.
 
-> NOTE: If you use `cf-layout.less` directly,
+> NOTE: If you use `bf-layout.less` directly,
   be sure to run the file through
   [Autoprefixer](https://github.com/postcss/autoprefixer),
   or your compiled Capital Framework CSS will
@@ -45,7 +45,7 @@ dependencies of this component.
     - [Sub blocks](#sub-blocks)
     - [Mixing content blocks with content layouts](#mixing-content-blocks-with-content-layouts)
 - [Bleedbar sidebar styling](#bleedbar-sidebar-styling)
-- [cf-grid helpers](#cf-grid-helpers)
+- [bf-grid helpers](#bf-grid-helpers)
     - [.wrapper (base)](#wrapper-base)
     - [Column divider modifiers](#column-divider-modifiers)
 - [Featured content module](#featured-content-module)
@@ -65,7 +65,7 @@ Overwrite them in your own project by duplicating the variable `@key: value`.
 
 ### Color variables
 
-Color variables referenced in comments are from [cf-core cf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/cf-core/src/cf-brand-colors.less).
+Color variables referenced in comments are from [bf-core bf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/bf-core/src/bf-brand-colors.less).
 
 ```
 // .block
@@ -1242,11 +1242,11 @@ it in your markup._
 ```
 
 
-## cf-grid helpers
+## bf-grid helpers
 
 ### .wrapper (base)
 
-Turns an element into a cf-grid wrapper at `801px` and above. Includes some
+Turns an element into a bf-grid wrapper at `801px` and above. Includes some
 explicit declarations for Internet Explorer 8 due to the fact that it doesn't
 support media queries.
 
@@ -1262,7 +1262,7 @@ support media queries.
 
 ### Column divider modifiers
 
-cf-grid columns use left and right `border` for fixed `margin` which means it's
+bf-grid columns use left and right `border` for fixed `margin` which means it's
 not possible to set visual left and right borders directly on them.
 Instead we can use the `:before` pseudo element and position it absolutely.
 The added benefit of doing it this way is that the `border` spans the entire

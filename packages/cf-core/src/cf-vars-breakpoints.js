@@ -4,7 +4,7 @@
    All values are pixel based.
 
    NOTE: If any of the values in this file are adjusted,
-         they need to be adjusted in cf-vars-breakpoints.less as well.
+         they need to be adjusted in bf-vars-breakpoints.less as well.
    ========================================================================== */
 
 module.exports = {

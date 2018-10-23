@@ -2,10 +2,10 @@ Expandables are components that have additional content that can be
 opened (expanded) and closed (collapsed). They can appear on their own
 or in groups.
 
-[`cf-core`](../cf-core) and [`cf-icons`](../cf-icons) components are
+[`bf-core`](../bf-core) and [`bf-icons`](../bf-icons) components are
 dependencies of this component.
 
-> NOTE: If you use `cf-expandables.less` directly,
+> NOTE: If you use `bf-expandables.less` directly,
   be sure to run the file through
   [Autoprefixer](https://github.com/postcss/autoprefixer),
   or your compiled Capital Framework CSS will
@@ -40,7 +40,7 @@ Overwrite them in your own project by duplicating the variable `@key: value`.
 
 ### Color variables
 
-Color variables referenced in comments are from [cf-core cf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/cf-core/src/cf-brand-colors.less).
+Color variables referenced in comments are from [bf-core bf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/bf-core/src/bf-brand-colors.less).
 
 
 ```

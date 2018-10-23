@@ -1,15 +1,15 @@
 {
-  "name": "cf-icons",
+  "name": "bf-icons",
   "version": "4.4.1",
   "description": "Capital Framework icons",
-  "less": "src/cf-icons.less",
-  "style": "cf-icons.css",
+  "less": "src/bf-icons.less",
+  "style": "bf-icons.css",
   "scripts": {
     "//": "This is a convenience script to allow running `npm test` from this dir.",
     "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
   },
   "dependencies": {
-    "cf-core": "^4.0.0"
+    "bf-core": "^4.0.0"
   },
   "keywords": [
     "icons"

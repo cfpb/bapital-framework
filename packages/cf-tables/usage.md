@@ -1,9 +1,9 @@
-The cf-tables component formats tables, and provides an easy way to make
+The bf-tables component formats tables, and provides an easy way to make
 tables sortable.
 
-The [`cf-core`](../core) component is a dependency of this component.
+The [`bf-core`](../core) component is a dependency of this component.
 
-> NOTE: If you use `cf-tables.less` directly,
+> NOTE: If you use `bf-tables.less` directly,
   be sure to run the file through
   [Autoprefixer](https://github.com/postcss/autoprefixer),
   or your compiled Capital Framework CSS will
@@ -36,7 +36,7 @@ Overwrite them in your own project by duplicating the variable `@key: value`.
 
 ### Color variables
 
-Color variables referenced in comments are from [cf-core cf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/cf-core/src/cf-brand-colors.less).
+Color variables referenced in comments are from [bf-core bf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/bf-core/src/bf-brand-colors.less).
 
 ```less
 @table-head-bg:                 @gray-5;
@@ -235,7 +235,7 @@ highlighting and hyperlinking rows which contain links.
 
 ## Sortable tables
 
-The cf-tables module also includes a sortable table utility.
+The bf-tables module also includes a sortable table utility.
 
 ### Making a table sortable
 

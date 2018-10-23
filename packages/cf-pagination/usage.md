@@ -1,10 +1,10 @@
-The cf-pagination component provides a responsive approach to multipage page
+The bf-pagination component provides a responsive approach to multipage page
 navigation for Capital Framework.
 
-[`cf-core`](../cf-core), [`cf-buttons`](../cf-buttons), and
-[`cf-icons`](../cf-icons) components are all dependencies of this component.
+[`bf-core`](../bf-core), [`bf-buttons`](../bf-buttons), and
+[`bf-icons`](../bf-icons) components are all dependencies of this component.
 
-> NOTE: If you use `cf-pagination.less` directly,
+> NOTE: If you use `bf-pagination.less` directly,
   be sure to run the file through
   [Autoprefixer](https://github.com/postcss/autoprefixer),
   or your compiled Capital Framework CSS will
@@ -27,7 +27,7 @@ Overwrite them in your own project by duplicating the variable `@key: value`.
 
 ### Color variables
 
-Color variables referenced in comments are from [cf-core cf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/cf-core/src/cf-brand-colors.less).
+Color variables referenced in comments are from [bf-core bf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/bf-core/src/bf-brand-colors.less).
 
 ```
 @pagination-text:               @gray;

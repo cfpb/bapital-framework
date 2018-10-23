@@ -1,18 +1,18 @@
 {
-  "name": "cf-forms",
+  "name": "bf-forms",
   "version": "5.2.0",
   "description": "Capital Framework form fields",
-  "less": "src/cf-forms.less",
-  "style": "cf-forms.css",
+  "less": "src/bf-forms.less",
+  "style": "bf-forms.css",
   "scripts": {
     "//": "This is a convenience script to allow running `npm test` from this dir.",
     "test": "case $(pwd) in */cf/src/*) cd ../.. && npm test;; esac"
   },
   "dependencies": {
-    "cf-core": "^4.0.0",
-    "cf-buttons": "^5.0.0",
-    "cf-grid": "^4.0.0",
-    "cf-icons": "^4.0.0"
+    "bf-core": "^4.0.0",
+    "bf-buttons": "^5.0.0",
+    "bf-grid": "^4.0.0",
+    "bf-icons": "^4.0.0"
   },
   "keywords": [
     "forms"

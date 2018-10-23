@@ -5,9 +5,9 @@
    ========================================================================== */
 
 
-const config = require( 'cf-atomic-component/src/utilities/config' );
+const config = require( 'bf-atomic-component/src/utilities/config' );
 const closest = require(
-  'cf-atomic-component/src/utilities/dom-closest'
+  'bf-atomic-component/src/utilities/dom-closest'
 ).closest;
 const DIRECTIONS = config.DIRECTIONS;
 const UNDEFINED = config.UNDEFINED;

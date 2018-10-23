@@ -1,18 +1,18 @@
 {
-  "name": "cf-expandables",
+  "name": "bf-expandables",
   "version": "7.0.1",
   "description": "Capital Framework expandables",
-  "main": "src/cf-expandables.js",
-  "less": "src/cf-expandables.less",
-  "style": "cf-expandables.css",
+  "main": "src/bf-expandables.js",
+  "less": "src/bf-expandables.less",
+  "style": "bf-expandables.css",
   "scripts": {
     "//": "This is a convenience script to allow running `npm test` from this dir.",
     "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
   },
   "dependencies": {
-    "cf-atomic-component": "^1.4.0",
-    "cf-core": "^4.0.0",
-    "cf-icons": "^4.0.0",
+    "bf-atomic-component": "^1.4.0",
+    "bf-core": "^4.0.0",
+    "bf-icons": "^4.0.0",
     "classlist-polyfill": "1.0.3"
   },
   "keywords": [

@@ -1,16 +1,16 @@
 {
-  "name": "cf-typography",
+  "name": "bf-typography",
   "version": "5.0.1",
   "description": "Capital Framework typography",
-  "less": "src/cf-typography.less",
-  "style": "cf-typography.css",
+  "less": "src/bf-typography.less",
+  "style": "bf-typography.css",
   "scripts": {
     "//": "This is a convenience script to allow running `npm test` from this dir.",
     "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
   },
   "dependencies": {
-    "cf-core": "^4.0.0",
-    "cf-icons": "^4.0.0"
+    "bf-core": "^4.0.0",
+    "bf-icons": "^4.0.0"
   },
   "keywords": [
     "typography"

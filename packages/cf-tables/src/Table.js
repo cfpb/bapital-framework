@@ -3,8 +3,8 @@
    ========================================================================== */
 
 
-const config = require( 'cf-atomic-component/src/utilities/config' );
-const Organism = require( 'cf-atomic-component/src/components/Organism' );
+const config = require( 'bf-atomic-component/src/utilities/config' );
+const Organism = require( 'bf-atomic-component/src/components/Organism' );
 const TableSortable = require( './TableSortable' );
 const TableRowLinks = require( './TableRowLinks' );
 

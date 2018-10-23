@@ -5,16 +5,16 @@
 require( 'classlist-polyfill' );
 
 const domClassList = require(
-  'cf-atomic-component/src/utilities/dom-class-list'
+  'bf-atomic-component/src/utilities/dom-class-list'
 );
 const addClass = domClassList.addClass;
 const contains = domClassList.contains;
 const removeClass = domClassList.removeClass;
 const closest = require(
-  'cf-atomic-component/src/utilities/dom-closest'
+  'bf-atomic-component/src/utilities/dom-closest'
 ).closest;
-const Events = require( 'cf-atomic-component/src/mixins/Events.js' );
-const Organism = require( 'cf-atomic-component/src/components/Organism' );
+const Events = require( 'bf-atomic-component/src/mixins/Events.js' );
+const Organism = require( 'bf-atomic-component/src/components/Organism' );
 const ExpandableTransition = require( './ExpandableTransition' );
 
 const Expandable = Organism.extend( {

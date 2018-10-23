@@ -30,7 +30,7 @@ and apply the mixins to those semantic classes, like this:
 
 Read on for more details on the variables and mixins this component provides.
 
-> NOTE: If you use `cf-grid.less` directly,
+> NOTE: If you use `bf-grid.less` directly,
   be sure to run the file through
   [Autoprefixer](https://github.com/postcss/autoprefixer),
   or your compiled Capital Framework CSS will
@@ -156,9 +156,9 @@ add a wrapper just inside the column to be styled that way.
 </div>
 ```
 
-**NOTE:** cf-grid does not have a "row" concept.
+**NOTE:** bf-grid does not have a "row" concept.
 If you have a 12-column grid and place 24 columns inside a wrapper,
-cf-grid columns will automatically stack into two rows of 12.
+bf-grid columns will automatically stack into two rows of 12.
 
 
 ## Nested columns
@@ -168,7 +168,7 @@ you will notice undesirable offsetting when nesting columns.
 Normally this is removed with complex selectors
 or by adding classes to the first and last column per 'row'.
 
-In cf-grid, the way to get around this is by wrapping your columns
+In bf-grid, the way to get around this is by wrapping your columns
 in a container that utilizes the `.grid_nested-col-group()` mixin.
 This mixin uses negative left and right margins to
 pull the columns back into alignment with parent columns.

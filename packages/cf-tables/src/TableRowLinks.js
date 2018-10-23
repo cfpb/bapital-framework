@@ -6,7 +6,7 @@
 
 
 const closest = require(
-  'cf-atomic-component/src/utilities/dom-closest'
+  'bf-atomic-component/src/utilities/dom-closest'
 ).closest;
 
 const TableRowLinks = {

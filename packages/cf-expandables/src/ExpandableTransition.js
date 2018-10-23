@@ -1,7 +1,7 @@
 // Required modules.
-const Events = require( 'cf-atomic-component/src/mixins/Events.js' );
-const BaseTransition = require( 'cf-atomic-component/src/utilities/transition/BaseTransition' );
-const contains = require( 'cf-atomic-component/src/utilities/dom-class-list' ).contains;
+const Events = require( 'bf-atomic-component/src/mixins/Events.js' );
+const BaseTransition = require( 'bf-atomic-component/src/utilities/transition/BaseTransition' );
+const contains = require( 'bf-atomic-component/src/utilities/dom-class-list' ).contains;
 
 // Exported constants.
 const CLASSES = {

@@ -1,10 +1,10 @@
-The cf-buttons component provides extensions to the basic button styles for
+The bf-buttons component provides extensions to the basic button styles for
 Capital Framework.
 
-[`cf-core`](../cf-core) and [`cf-icons`](../cf-icons) components are all
+[`bf-core`](../bf-core) and [`bf-icons`](../bf-icons) components are all
 dependencies of this component.
 
-> NOTE: If you use `cf-buttons.less` directly,
+> NOTE: If you use `bf-buttons.less` directly,
   be sure to run the file through
   [Autoprefixer](https://github.com/postcss/autoprefixer),
   or your compiled Capital Framework CSS will
@@ -34,7 +34,7 @@ Overwrite them in your own project by duplicating the variable `@key: value`.
 
 ### Color variables
 
-Color variables referenced in comments are from [cf-core cf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/cf-core/src/cf-brand-colors.less).
+Color variables referenced in comments are from [bf-core bf-brand-colors.less](https://github.com/cfpb/capital-framework/blob/master/src/bf-core/src/bf-brand-colors.less).
 
 ```
 // .btn
@@ -566,10 +566,10 @@ outside the scope of the initial svg icon work._
     Submit your complaint
     <span class="a-btn_icon
                  a-btn_icon__on-right
-                 cf-icon
-                 cf-icon__after
-                 cf-icon-update
-                 cf-icon__spin"></span>
+                 bf-icon
+                 bf-icon__after
+                 bf-icon-update
+                 bf-icon__spin"></span>
 </button>
 
 ```
@@ -577,10 +577,10 @@ outside the scope of the initial svg icon work._
     Submit your complaint
     <span class="a-btn_icon
                  a-btn_icon__on-right
-                 cf-icon
-                 cf-icon__after
-                 cf-icon-update
-                 cf-icon__spin"></span>
+                 bf-icon
+                 bf-icon__after
+                 bf-icon-update
+                 bf-icon__spin"></span>
 </button>
 ```
 

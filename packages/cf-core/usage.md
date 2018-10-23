@@ -1,8 +1,8 @@
-The cf-core component acts as the backbone for Capital Framework.
-It's made up of four child components `cf-vars`, `cf-media-queries`,
-`cf-utilities`, and `cf-base`.
+The bf-core component acts as the backbone for Capital Framework.
+It's made up of four child components `bf-vars`, `bf-media-queries`,
+`bf-utilities`, and `bf-base`.
 
-> NOTE: If you use any cf-core Less file directly,
+> NOTE: If you use any bf-core Less file directly,
   be sure to run the files through
   [Autoprefixer](https://github.com/postcss/autoprefixer),
   or your compiled Capital Framework CSS will
@@ -46,7 +46,7 @@ Overwrite them in your own project by duplicating the variable `@key: value`.
 
 ### Color variables
 
-Color variables referenced in comments are from [cf-core brand-palette.less](https://github.com/cfpb/capital-framework/blob/master/src/cf-core/src/cf-brand-colors.less).
+Color variables referenced in comments are from [bf-core brand-palette.less](https://github.com/cfpb/capital-framework/blob/master/src/bf-core/src/bf-brand-colors.less).
 
 ```
 // body
@@ -294,7 +294,7 @@ add descriptive text with the `u-visually-hidden` class.
 ```
 <h1>
     <a href="#">
-        <span class="cf-icon cf-icon-twitter-square"></span>
+        <span class="bf-icon bf-icon-twitter-square"></span>
         <span class="u-visually-hidden">Share on Twitter</span>
     </a>
 </h1>
@@ -711,7 +711,7 @@ Sets the element to `14px` (in `em`s) based on the text size passed as
 #### :warning: These mixins are deprecated and will be removed in CFv5 :warning:
 
 Our
-[`@font-face` syntax](https://github.com/cfpb/capital-framework/blob/master/src/cf-typography/src/licensed-fonts.less)
+[`@font-face` syntax](https://github.com/cfpb/capital-framework/blob/master/src/bf-typography/src/licensed-fonts.less)
 is transitioning to a family-linked model,
 which eliminates the need for these old mixins.
 Style and weight should now be set with the traditional CSS properties.
@@ -728,7 +728,7 @@ Sets the font-stack, weight, and style of an element.
 ```
 
 To use your own fonts in the webfont mixins, set your own font with the
-`@webfont-regular/italic/medium/demi` variables in your `cf-theme-overrides.less`
+`@webfont-regular/italic/medium/demi` variables in your `bf-theme-overrides.less`
 file.
 
 _These mixins also add the appropriate `.lt-ie9` overrides. `.lt-ie9`

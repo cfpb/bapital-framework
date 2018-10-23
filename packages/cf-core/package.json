@@ -1,9 +1,9 @@
 {
-  "name": "cf-core",
+  "name": "bf-core",
   "version": "4.10.0",
   "description": "Capital Framework core styles",
-  "less": "src/cf-core.less",
-  "style": "cf-core.css",
+  "less": "src/bf-core.less",
+  "style": "bf-core.css",
   "scripts": {
     "//": "This is a convenience script to allow running `npm test` from this dir.",
     "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"

@@ -11,7 +11,7 @@
     background: @notification-bg;
     border: 1px solid @notification-border;
 
-    .cf-icon-svg {
+    .bf-icon-svg {
         position: absolute;
         fill: @notification-icon;
 
@@ -24,7 +24,7 @@
         background: @notification-bg-success;
         border-color: @notification-border-success;
 
-        .cf-icon-svg {
+        .bf-icon-svg {
            fill: @notification-icon-success;
         }
     }
@@ -33,7 +33,7 @@
         background: @notification-bg-warning;
         border-color: @notification-border-warning;
 
-        .cf-icon-svg {
+        .bf-icon-svg {
             fill: @notification-icon-warning;
         }
     }
@@ -42,7 +42,7 @@
         background: @notification-bg-error;
         border-color: @notification-border-error;
 
-        .cf-icon-svg {
+        .bf-icon-svg {
             fill: @notification-icon-error;
         }
     }
@@ -52,7 +52,7 @@
     }
 
     // Only adding left padding if an icon is present.
-    .cf-icon-svg + &_content {
+    .bf-icon-svg + &_content {
         padding-left: unit( 25px / @base-font-size-px, em );
     }
 
