@@ -1,0 +1,42 @@
+{
+  "name": "capital-framework",
+  "version": "7.2.0",
+  "description": "CFPB's UI framework",
+  "main": "src/capital-framework.js",
+  "less": "src/capital-framework.less",
+  "author": {
+    "name": "Consumer Financial Protection Bureau",
+    "email": "tech@cfpb.gov",
+    "url": "https://cfpb.github.io/"
+  },
+  "license": "SEE LICENSE IN TERMS.md",
+  "keywords": [
+    "capital-framework"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cfpb/capital-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cfpb/capital-framework/issues"
+  },
+  "dependencies": {
+    "cf-expandables": "^7.0.0",
+    "cf-tables": "^5.0.0",
+    "cf-core": "^4.10.0",
+    "cf-atomic-component": "^2.0.0",
+    "cf-icons": "^4.4.1",
+    "cf-buttons": "^5.0.0",
+    "cf-forms": "^5.2.0",
+    "cf-grid": "^4.2.4",
+    "cf-layout": "^5.0.0",
+    "cf-typography": "^5.0.1",
+    "cf-notifications": "^2.0.2",
+    "cf-pagination": "^5.0.1",
+    "cf-expandables": "^7.0.1",
+    "cf-tables": "^5.0.0"
+  },
+  "keywords": [
+    "tables"
+  ]
+}
