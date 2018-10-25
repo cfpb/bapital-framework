@@ -1,6 +1,6 @@
 {
   "name": "bapital-notifications",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Capital Framework notifications",
   "less": "src/bapital-notifications.less",
   "style": "bapital-notifications.css",
@@ -9,8 +9,8 @@
     "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
   },
   "dependencies": {
-    "bapital-core": "^1.0.0",
-    "bapital-icons": "^1.0.0"
+    "bapital-core": "^1.0.1",
+    "bapital-icons": "^1.0.1"
   },
   "keywords": [
     "notifications"
