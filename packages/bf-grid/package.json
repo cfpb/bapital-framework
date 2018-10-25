@@ -1,6 +1,6 @@
 {
   "name": "bf-grid",
-  "version": "4.2.4",
+  "version": "1.0.0",
   "description": "Capital Framework grid",
   "less": "src/bf-grid.less",
   "style": "bf-grid.css",

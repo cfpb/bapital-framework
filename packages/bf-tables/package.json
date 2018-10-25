@@ -1,6 +1,6 @@
 {
   "name": "bf-tables",
-  "version": "5.0.0",
+  "version": "1.0.0",
   "description": "Capital Framework tables",
   "main": "src/bf-tables.js",
   "less": "src/bf-tables.less",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "bf-atomic-component": "^1.4.0",
-    "bf-core": "^4.0.0"
+    "bf-core": "^1.0.0"
   },
   "keywords": [
     "tables"

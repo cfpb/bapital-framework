@@ -1,6 +1,6 @@
 {
   "name": "bf-typography",
-  "version": "5.0.1",
+  "version": "1.0.0",
   "description": "Capital Framework typography",
   "less": "src/bf-typography.less",
   "style": "bf-typography.css",
@@ -9,8 +9,8 @@
     "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
   },
   "dependencies": {
-    "bf-core": "^4.0.0",
-    "bf-icons": "^4.0.0"
+    "bf-core": "^1.0.0",
+    "bf-icons": "^1.0.0"
   },
   "keywords": [
     "typography"

@@ -1,6 +1,6 @@
 {
   "name": "bf-notifications",
-  "version": "2.0.2",
+  "version": "1.0.0",
   "description": "Capital Framework notifications",
   "less": "src/bf-notifications.less",
   "style": "bf-notifications.css",
@@ -9,8 +9,8 @@
     "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
   },
   "dependencies": {
-    "bf-core": "^4.0.0",
-    "bf-icons": "^4.0.0"
+    "bf-core": "^1.0.0",
+    "bf-icons": "^1.0.0"
   },
   "keywords": [
     "notifications"

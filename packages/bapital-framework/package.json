@@ -1,6 +1,6 @@
 {
   "name": "bapital-framework",
-  "version": "7.2.0",
+  "version": "1.0.0",
   "description": "CFPB's UI framework",
   "main": "src/bapital-framework.js",
   "less": "src/bapital-framework.less",
@@ -11,7 +11,7 @@
   },
   "license": "SEE LICENSE IN TERMS.md",
   "keywords": [
-    "bapital-framework"
+    "tables"
   ],
   "repository": {
     "type": "git",
@@ -21,22 +21,17 @@
     "url": "https://github.com/cfpb/bapital-framework/issues"
   },
   "dependencies": {
-    "bf-expandables": "^7.0.0",
-    "bf-tables": "^5.0.0",
-    "bf-core": "^4.10.0",
-    "bf-atomic-component": "^2.0.0",
-    "bf-icons": "^4.4.1",
-    "bf-buttons": "^5.0.0",
-    "bf-forms": "^5.2.0",
-    "bf-grid": "^4.2.4",
-    "bf-layout": "^5.0.0",
-    "bf-typography": "^5.0.1",
-    "bf-notifications": "^2.0.2",
-    "bf-pagination": "^5.0.1",
-    "bf-expandables": "^7.0.1",
-    "bf-tables": "^5.0.0"
-  },
-  "keywords": [
-    "tables"
-  ]
+    "bf-atomic-component": "^1.0.0",
+    "bf-buttons": "^1.0.0",
+    "bf-core": "^1.0.0",
+    "bf-expandables": "^1.0.0",
+    "bf-forms": "^1.0.0",
+    "bf-grid": "^1.0.0",
+    "bf-icons": "^1.0.0",
+    "bf-layout": "^1.0.0",
+    "bf-notifications": "^1.0.0",
+    "bf-pagination": "^1.0.0",
+    "bf-tables": "^1.0.0",
+    "bf-typography": "^1.0.0"
+  }
 }

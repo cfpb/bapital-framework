@@ -1,6 +1,6 @@
 {
   "name": "bf-pagination",
-  "version": "5.0.1",
+  "version": "1.0.0",
   "description": "Capital Framework pagination",
   "less": "src/bf-pagination.less",
   "style": "bf-pagination.css",
@@ -9,9 +9,9 @@
     "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
   },
   "dependencies": {
-    "bf-core": "^4.0.0",
-    "bf-buttons": "^5.0.0",
-    "bf-icons": "^4.0.0"
+    "bf-buttons": "^1.0.0",
+    "bf-core": "^1.0.0",
+    "bf-icons": "^1.0.0"
   },
   "keywords": [
     "pagination"

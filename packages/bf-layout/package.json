@@ -1,6 +1,6 @@
 {
   "name": "bf-layout",
-  "version": "5.0.0",
+  "version": "1.0.0",
   "description": "Capital Framework layouts",
   "less": "src/bf-layout.less",
   "style": "bf-layout.css",
@@ -9,8 +9,8 @@
     "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
   },
   "dependencies": {
-    "bf-core": "^4.0.0",
-    "bf-grid": "^4.0.0"
+    "bf-core": "^1.0.0",
+    "bf-grid": "^1.0.0"
   },
   "keywords": [
     "layout"

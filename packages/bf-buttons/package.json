@@ -1,6 +1,6 @@
 {
   "name": "bf-buttons",
-  "version": "5.0.0",
+  "version": "1.0.0",
   "description": "Capital Framework buttons",
   "less": "src/bf-buttons.less",
   "style": "bf-buttons.css",
@@ -9,8 +9,8 @@
     "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
   },
   "dependencies": {
-    "bf-core": "^4.0.0",
-    "bf-icons": "^4.0.0"
+    "bf-core": "^1.0.0",
+    "bf-icons": "^1.0.0"
   },
   "keywords": [
     "buttons"

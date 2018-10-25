@@ -1,6 +1,6 @@
 {
   "name": "bf-core",
-  "version": "4.10.0",
+  "version": "1.0.0",
   "description": "Capital Framework core styles",
   "less": "src/bf-core.less",
   "style": "bf-core.css",
