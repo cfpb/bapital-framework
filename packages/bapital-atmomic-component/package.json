@@ -1,0 +1,18 @@
+{
+  "name": "bapital-atomic-component",
+  "version": "1.0.0",
+  "description": "Capital Framework atomic component micro-framework",
+  "less": "src/bapital-atomic-component.less",
+  "style": "bapital-atomic-component.css",
+  "scripts": {
+    "//": "This is a convenience script to allow running `npm test` from this dir.",
+    "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
+  },
+  "dependencies": {
+    "dom-delegate": "^2.0.3"
+  },
+  "keywords": [
+    "atomic-component"
+  ],
+  "gitHead": "d801255ecf931efde71143f2225b3b5033ecb102"
+}

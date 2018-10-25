@@ -1,0 +1,16 @@
+{
+  "name": "bapital-core",
+  "version": "1.0.0",
+  "description": "Capital Framework core styles",
+  "less": "src/bapital-core.less",
+  "style": "bapital-core.css",
+  "scripts": {
+    "//": "This is a convenience script to allow running `npm test` from this dir.",
+    "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
+  },
+  "dependencies": {
+    "normalize-css": "^2.0.0",
+    "normalize-legacy-addon": "0.1.0"
+  },
+  "gitHead": "d801255ecf931efde71143f2225b3b5033ecb102"
+}

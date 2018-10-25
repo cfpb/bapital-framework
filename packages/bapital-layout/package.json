@@ -1,0 +1,19 @@
+{
+  "name": "bapital-layout",
+  "version": "1.0.0",
+  "description": "Capital Framework layouts",
+  "less": "src/bapital-layout.less",
+  "style": "bapital-layout.css",
+  "scripts": {
+    "//": "This is a convenience script to allow running `npm test` from this dir.",
+    "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
+  },
+  "dependencies": {
+    "bapital-core": "^1.0.0",
+    "bapital-grid": "^1.0.0"
+  },
+  "keywords": [
+    "layout"
+  ],
+  "gitHead": "d801255ecf931efde71143f2225b3b5033ecb102"
+}

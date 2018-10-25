@@ -1,0 +1,66 @@
+//
+// Notification
+//
+
+.m-notification {
+    display: none;
+    position: relative;
+
+    padding: @notification-padding__px;
+
+    background: @notification-bg;
+    border: 1px solid @notification-border;
+
+    .bapital-icon-svg {
+        position: absolute;
+        fill: @notification-icon;
+
+        .respond-to-min( @bp-sm-min, {
+            font-size: unit( @size-iv / @base-font-size-px, em );
+        } );
+    }
+
+    &__success {
+        background: @notification-bg-success;
+        border-color: @notification-border-success;
+
+        .bapital-icon-svg {
+           fill: @notification-icon-success;
+        }
+    }
+
+    &__warning {
+        background: @notification-bg-warning;
+        border-color: @notification-border-warning;
+
+        .bapital-icon-svg {
+            fill: @notification-icon-warning;
+        }
+    }
+
+    &__error {
+        background: @notification-bg-error;
+        border-color: @notification-border-error;
+
+        .bapital-icon-svg {
+            fill: @notification-icon-error;
+        }
+    }
+
+    &__visible {
+        display: block;
+    }
+
+    // Only adding left padding if an icon is present.
+    .bapital-icon-svg + &_content {
+        padding-left: unit( 25px / @base-font-size-px, em );
+    }
+
+    &_message {
+        margin-bottom: 0;
+    }
+
+    &_explanation {
+        margin-top: unit( 5px / @base-font-size-px, em );
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "bapital-icons",
+  "version": "1.0.0",
+  "description": "Capital Framework icons",
+  "less": "src/bapital-icons.less",
+  "style": "bapital-icons.css",
+  "scripts": {
+    "//": "This is a convenience script to allow running `npm test` from this dir.",
+    "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
+  },
+  "dependencies": {
+    "bapital-core": "^1.0.0"
+  },
+  "keywords": [
+    "icons"
+  ],
+  "gitHead": "d801255ecf931efde71143f2225b3b5033ecb102"
+}

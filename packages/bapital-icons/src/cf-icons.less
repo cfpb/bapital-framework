@@ -1,0 +1,1672 @@
+/* ==========================================================================
+   Capital Framework
+   Icons
+   ========================================================================== */
+
+//
+// Theme variables
+//
+
+//
+// Size variables
+//
+
+// Icon height matches the 19px rendered canvas of text set in Avenir Next
+// sized at 16px ( 19/16 = 1.1875 )
+@bapital-icon-height: 1.1875em;
+
+
+//
+// The basics
+//
+
+.bapital-icon-svg {
+    height: @bapital-icon-height;
+    vertical-align: text-top;
+    fill: currentColor;
+
+    // IE 10 & 11 require a max-width otherwise the SVG takes up 100%
+    max-width: 1em;
+
+    .lt-ie10 & {
+        // IE 9 require a width otherwise the SVG takes up 100%
+        width: 1em;
+    }
+
+    .lt-ie9 & {
+        // IE 8 doesn't support currentColor, hide icons and let the paired
+        // text stand on its own
+        display: none;
+    }
+
+    &__updating {
+        animation: updating-animation 1.25s infinite linear;
+        transform-origin: 50% 50%;
+    }
+}
+
+@keyframes updating-animation {
+    0% {
+        transform: rotate( 0deg );
+    }
+    100% {
+        transform: rotate( 359deg );
+    }
+}
+
+// TODO: Everything from here down is deprecated and should be removed with
+// the next major release of Capital Framework
+
+//
+// Theme variables
+//
+
+
+//
+// Color variables
+//
+@bapital-icon-border-color:          @gray;
+
+
+//
+// Icon generation variables
+//
+
+@bapital-icon-prefix:                bapital-icon;
+@bapital-icon-path:                  'fonts';
+
+
+//
+// Import external dependencies
+//
+
+@import '../../bapital-core/src/bapital-core.less';
+
+
+//
+// The basics
+//
+
+@font-face {
+    font-family: 'CFPB Minicons';
+    src: url( '@{bapital-icon-path}/bapital-icons.eot' );
+    src: url( '@{bapital-icon-path}/bapital-icons.eot?#iefix' ) format( 'embedded-opentype' ),
+         url( '@{bapital-icon-path}/bapital-icons.woff' ) format( 'woff' ),
+         url( '@{bapital-icon-path}/bapital-icons.ttf' ) format( 'truetype' ),
+         url( '@{bapital-icon-path}/bapital-icons.svg' ) format( 'svg' );
+    font-weight: normal;
+    font-style: normal;
+}
+
+// The class .bapital-icon is used to support adding these rules via a mixin,
+// specifically when @bapital-icon-prefix is changed to something other than
+// 'bapital-icon', since string interpolation is incompatible with mixin calls.
+//
+// For example you can't do this:
+// .link-with-auto-icon {
+//   .@{bapital-icon-prefix}();
+// }
+//
+// But you can do this:
+// .link-with-auto-icon {
+//   .@bapital-icon();
+// }
+
+.bapital-icon() {
+    font-family: 'CFPB Minicons';
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bapital-icon-pseudo-elem( @rules ) {
+    &.@{bapital-icon-prefix}:before,
+    &.@{bapital-icon-prefix}__before:before,
+    &.@{bapital-icon-prefix}__after:after {
+        @rules();
+    }
+}
+
+.@{bapital-icon-prefix}:before,
+.@{bapital-icon-prefix}__before:before,
+.@{bapital-icon-prefix}__after:after {
+    .bapital-icon();
+}
+
+//
+// Icon character variables
+//
+
+// Navigation icons
+
+@bapital-icon-left:                       '\e000';
+@bapital-icon-left-round:                 '\e001';
+@bapital-icon-right:                      '\e002';
+@bapital-icon-right-round:                '\e003';
+@bapital-icon-up:                         '\e004';
+@bapital-icon-up-round:                   '\e005';
+@bapital-icon-down:                       '\e006';
+@bapital-icon-down-round:                 '\e007';
+@bapital-icon-arrow-left:                 '\e008';
+@bapital-icon-arrow-left-round:           '\e009';
+@bapital-icon-arrow-right:                '\e010';
+@bapital-icon-arrow-right-round:          '\e011';
+@bapital-icon-arrow-up:                   '\e012';
+@bapital-icon-arrow-up-round:             '\e013';
+@bapital-icon-arrow-down:                 '\e014';
+@bapital-icon-arrow-down-round:           '\e015';
+
+// Status icons
+
+@bapital-icon-approved:                   '\e100';
+@bapital-icon-approved-round:             '\e101';
+@bapital-icon-error:                      '\e102';
+@bapital-icon-error-round:                '\e103';
+@bapital-icon-help:                       '\e104';
+@bapital-icon-help-round:                 '\e105';
+@bapital-icon-delete:                     '\e106';
+@bapital-icon-delete-round:               '\e107';
+@bapital-icon-plus:                       '\e108';
+@bapital-icon-plus-round:                 '\e109';
+@bapital-icon-minus:                      '\e110';
+@bapital-icon-minus-round:                '\e111';
+@bapital-icon-update:                     '\e112';
+@bapital-icon-update-round:               '\e113';
+
+// Social icons
+
+@bapital-icon-youtube:                    '\e200';
+@bapital-icon-youtube-square:             '\e201';
+@bapital-icon-linkedin:                   '\e202';
+@bapital-icon-linkedin-square:            '\e203';
+@bapital-icon-facebook:                   '\e204';
+@bapital-icon-facebook-square:            '\e205';
+@bapital-icon-flickr:                     '\e206';
+@bapital-icon-flickr-square:              '\e207';
+@bapital-icon-twitter:                    '\e208';
+@bapital-icon-twitter-square:             '\e209';
+@bapital-icon-github:                     '\e210';
+@bapital-icon-github-square:              '\e211';
+@bapital-icon-email-social:               '\e212';
+@bapital-icon-email-social-square:        '\e213';
+
+// Communication icons
+
+@bapital-icon-web:                        '\e300';
+@bapital-icon-web-round:                  '\e301';
+@bapital-icon-email:                      '\e302';
+@bapital-icon-email-round:                '\e303';
+@bapital-icon-mail:                       '\e304';
+@bapital-icon-mail-round:                 '\e305';
+@bapital-icon-phone:                      '\e306';
+@bapital-icon-phone-round:                '\e307';
+@bapital-icon-technology:                 '\e308';
+@bapital-icon-technology-round:           '\e309';
+@bapital-icon-fax:                        '\e310';
+@bapital-icon-fax-round:                  '\e311';
+
+// Document icons
+
+@bapital-icon-document:                   '\e400';
+@bapital-icon-document-round:             '\e401';
+@bapital-icon-pdf:                        '\e402';
+@bapital-icon-pdf-round:                  '\e403';
+@bapital-icon-upload:                     '\e404';
+@bapital-icon-upload-round:               '\e405';
+@bapital-icon-download:                   '\e406';
+@bapital-icon-download-round:             '\e407';
+@bapital-icon-copy:                       '\e408';
+@bapital-icon-copy-round:                 '\e409';
+@bapital-icon-edit:                       '\e410';
+@bapital-icon-edit-round:                 '\e411';
+@bapital-icon-attach:                     '\e412';
+@bapital-icon-attach-round:               '\e413';
+@bapital-icon-print:                      '\e414';
+@bapital-icon-print-round:                '\e415';
+@bapital-icon-save:                       '\e416';
+@bapital-icon-save-round:                 '\e417';
+@bapital-icon-appendix:                   '\e418';
+@bapital-icon-appendix-round:             '\e419';
+@bapital-icon-supplement:                 '\e420';
+@bapital-icon-supplement-round:           '\e421';
+@bapital-icon-rss:                        '\e422';
+@bapital-icon-rss-round:                  '\e423';
+
+// Financial products
+
+@bapital-icon-bank-account:               '\e500';
+@bapital-icon-bank-account-round:         '\e501';
+@bapital-icon-credit-card:                '\e502';
+@bapital-icon-credit-card-round:          '\e503';
+@bapital-icon-loan:                       '\e504';
+@bapital-icon-loan-round:                 '\e505';
+@bapital-icon-money-transfer:             '\e506';
+@bapital-icon-money-transfer-round:       '\e507';
+@bapital-icon-mortgage:                   '\e508';
+@bapital-icon-mortgage-round:             '\e509';
+@bapital-icon-debt-collection:            '\e510';
+@bapital-icon-debt-collection-round:      '\e511';
+@bapital-icon-credit-report:              '\e512';
+@bapital-icon-credit-report-round:        '\e513';
+@bapital-icon-money:                      '\e514';
+@bapital-icon-money-round:                '\e515';
+@bapital-icon-quick-cash:                 '\e516';
+@bapital-icon-quick-cash-round:           '\e517';
+@bapital-icon-contract:                   '\e518';
+@bapital-icon-contract-round:             '\e519';
+@bapital-icon-complaint:                  '\e520';
+@bapital-icon-complaint-round:            '\e521';
+@bapital-icon-getting-credit-card:        '\e522';
+@bapital-icon-getting-credit-card-round:  '\e523';
+@bapital-icon-buying-car:                 '\e524';
+@bapital-icon-buying-car-round:           '\e525';
+@bapital-icon-paying-college:             '\e526';
+@bapital-icon-paying-college-round:       '\e527';
+@bapital-icon-owning-home:                '\e528';
+@bapital-icon-owning-home-round:          '\e529';
+@bapital-icon-debt:                       '\e530';
+@bapital-icon-debt-round:                 '\e531';
+@bapital-icon-building-credit:            '\e532';
+@bapital-icon-building-credit-round:      '\e533';
+@bapital-icon-prepaid-cards:              '\e534';
+@bapital-icon-prepaid-cards-round:        '\e535';
+@bapital-icon-payday-loan:                '\e536';
+@bapital-icon-payday-loan-round:          '\e537';
+@bapital-icon-retirement:                 '\e538';
+@bapital-icon-retirement-round:           '\e539';
+
+// Web icons
+
+@bapital-icon-user:                       '\e600';
+@bapital-icon-user-round:                 '\e601';
+@bapital-icon-wifi:                       '\e602';
+@bapital-icon-wifi-round:                 '\e603';
+@bapital-icon-search:                     '\e604';
+@bapital-icon-search-round:               '\e605';
+@bapital-icon-share:                      '\e606';
+@bapital-icon-share-round:                '\e607';
+@bapital-icon-link:                       '\e608';
+@bapital-icon-link-round:                 '\e609';
+@bapital-icon-external-link:              '\e610';
+@bapital-icon-external-link-round:        '\e611';
+@bapital-icon-audio-mute:                 '\e612';
+@bapital-icon-audio-mute-round:           '\e616';
+@bapital-icon-audio-low:                  '\e613';
+@bapital-icon-audio-low-round:            '\e617';
+@bapital-icon-audio-medium:               '\e614';
+@bapital-icon-audio-medium-round:         '\e618';
+@bapital-icon-audio-max:                  '\e615';
+@bapital-icon-audio-max-round:            '\e619';
+@bapital-icon-favorite:                   '\e620';
+@bapital-icon-favorite-round:             '\e621';
+@bapital-icon-unfavorite:                 '\e622';
+@bapital-icon-unfavorite-round:           '\e623';
+@bapital-icon-bookmark:                   '\e624';
+@bapital-icon-bookmark-round:             '\e625';
+@bapital-icon-unbookmark:                 '\e626';
+@bapital-icon-unbookmark-round:           '\e627';
+@bapital-icon-settings:                   '\e628';
+@bapital-icon-settings-round:             '\e629';
+@bapital-icon-menu:                       '\e630';
+@bapital-icon-menu-round:                 '\e631';
+@bapital-icon-lock:                       '\e632';
+@bapital-icon-lock-round:                 '\e633';
+@bapital-icon-unlock:                     '\e634';
+@bapital-icon-unlock-round:               '\e635';
+@bapital-icon-clock:                      '\e636';
+@bapital-icon-clock-round:                '\e637';
+@bapital-icon-chart:                      '\e638';
+@bapital-icon-chart-round:                '\e639';
+@bapital-icon-play:                       '\e640';
+@bapital-icon-play-round:                 '\e641';
+@bapital-icon-history:                    '\e642';
+@bapital-icon-history-round:              '\e643';
+@bapital-icon-table-of-contents:          '\e644';
+@bapital-icon-table-of-contents-round:    '\e645';
+@bapital-icon-newspaper:                  '\e700';
+@bapital-icon-newspaper-round:            '\e701';
+@bapital-icon-microphone:                 '\e702';
+@bapital-icon-microphone-round:           '\e703';
+@bapital-icon-bullhorn:                   '\e704';
+@bapital-icon-bullhorn-round:             '\e705';
+@bapital-icon-double-quote:               '\e708';
+@bapital-icon-double-quote-round:         '\e709';
+@bapital-icon-speech-bubble:              '\e710';
+@bapital-icon-speech-bubble-round:        '\e711';
+@bapital-icon-information:                '\e712';
+@bapital-icon-information-round:          '\e713';
+@bapital-icon-lightbulb:                  '\e714';
+@bapital-icon-lightbulb-round:            '\e715';
+@bapital-icon-dialogue:                   '\e716';
+@bapital-icon-dialogue-round:             '\e717';
+@bapital-icon-date:                       '\e718';
+@bapital-icon-date-round:                 '\e719';
+@bapital-icon-closing-quote:              '\e720';
+@bapital-icon-closing-quote-round:        '\e721';
+@bapital-icon-livestream:                 '\e722';
+@bapital-icon-livestream-round:           '\e723';
+@bapital-icon-parents:                    '\e724';
+@bapital-icon-parents-round:              '\e725';
+@bapital-icon-servicemembers:             '\e726';
+@bapital-icon-servicemembers-round:       '\e727';
+
+//
+// Helper classes for icon sizes
+//
+
+// makes the font 33% larger relative to the icon container
+.@{bapital-icon-prefix}__lg {
+    .bapital-icon-pseudo-elem( {
+        font-size: ( 4em / 3 );
+        line-height: ( 3em / 4 );
+        vertical-align: -15%;
+    } );
+}
+
+.@{bapital-icon-prefix}__2x {
+    .bapital-icon-pseudo-elem( {
+        font-size: 2em;
+    } );
+}
+
+.@{bapital-icon-prefix}__3x {
+    .bapital-icon-pseudo-elem( {
+        font-size: 3em;
+    } );
+}
+
+.@{bapital-icon-prefix}__4x {
+    .bapital-icon-pseudo-elem( {
+        font-size: 4em;
+    } );
+}
+
+.@{bapital-icon-prefix}__5x {
+    .bapital-icon-pseudo-elem( {
+        font-size: 5em;
+    } );
+}
+
+//
+// Mixin classes
+//
+
+.bapital-icon__rotate( @degrees, @rotation ) {
+    // TOOD: Check whether `filter` can be replaced
+    //       by `-ms-transform` for CF supported browsers.
+    filter: progid:DXImageTransform.Microsoft.BasicImage( rotation=@rotation );
+    transform: rotate( @degrees );
+}
+
+.bapital-icon__flip( @horiz, @vert, @rotation ) {
+    filter: progid:DXImageTransform.Microsoft.BasicImage( rotation=@rotation, mirror=1 );
+    transform: scale( @horiz, @vert );
+}
+//
+// Helper classes for modified icons
+//
+
+.@{bapital-icon-prefix}__border {
+    .bapital-icon-pseudo-elem( {
+        padding: .2em .25em .15em;
+        border: solid .08em @bapital-icon-border-color;
+        border-radius: .1em;
+    } );
+}
+
+.@{bapital-icon-prefix}__rotate-90 {
+    .bapital-icon-pseudo-elem( {
+        .bapital-icon__rotate( 90deg,  1 );
+    } );
+}
+
+.@{bapital-icon-prefix}__rotate-180 {
+    .bapital-icon-pseudo-elem( {
+        .bapital-icon__rotate( 180deg, 2 );
+    } );
+}
+
+.@{bapital-icon-prefix}__rotate-270 {
+    .bapital-icon-pseudo-elem( {
+        .bapital-icon__rotate( 270deg, 3 );
+    } );
+}
+
+.@{bapital-icon-prefix}__flip-horizontal {
+    .bapital-icon-pseudo-elem( {
+        .bapital-icon__flip( -1, 1, 0 );
+    } );
+}
+
+.@{bapital-icon-prefix}__flip-vertical {
+    .bapital-icon-pseudo-elem( {
+        .bapital-icon__flip( 1, -1, 2 );
+    } );
+}
+
+:root .@{bapital-icon-prefix}__rotate-90,
+:root .@{bapital-icon-prefix}__rotate-180,
+:root .@{bapital-icon-prefix}__rotate-270,
+:root .@{bapital-icon-prefix}__flip-horizontal,
+:root .@{bapital-icon-prefix}__flip-vertical {
+    .bapital-icon-pseudo-elem( {
+        filter: none;
+    } );
+}
+
+//
+// Helper classes for animated icons
+//
+
+.@{bapital-icon-prefix}__spin {
+    .bapital-icon-pseudo-elem( {
+        animation: bapital-spin 2s infinite linear;
+    } );
+}
+
+.@{bapital-icon-prefix}__pulse {
+    .bapital-icon-pseudo-elem( {
+        animation: bapital-spin 1s infinite steps( 8 );
+    } );
+}
+
+@keyframes bapital-spin {
+    0% {
+        transform: rotate( 0deg );
+    }
+    100% {
+        transform: rotate( 359deg );
+    }
+}
+
+//
+// Navigation icons
+//
+
+.@{bapital-icon-prefix}-left {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-left;
+    } );
+}
+
+.@{bapital-icon-prefix}-left-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-left-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-right {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-right;
+    } );
+}
+
+.@{bapital-icon-prefix}-right-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-right-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-up {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-up;
+    } );
+}
+
+.@{bapital-icon-prefix}-up-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-up-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-down {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-down;
+    } );
+}
+
+.@{bapital-icon-prefix}-down-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-down-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-arrow-left {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-arrow-left;
+    } );
+}
+
+.@{bapital-icon-prefix}-arrow-left-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-arrow-left-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-arrow-right {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-arrow-right;
+    } );
+}
+
+.@{bapital-icon-prefix}-arrow-right-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-arrow-right-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-arrow-up {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-arrow-up;
+    } );
+}
+
+.@{bapital-icon-prefix}-arrow-up-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-arrow-up-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-arrow-down {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-arrow-down;
+    } );
+}
+
+.@{bapital-icon-prefix}-arrow-down-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-arrow-down-round;
+    } );
+}
+
+//
+// Status icons
+//
+
+.@{bapital-icon-prefix}-approved {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-approved;
+    } );
+}
+
+.@{bapital-icon-prefix}-approved-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-approved-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-error {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-error;
+    } );
+}
+
+.@{bapital-icon-prefix}-error-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-error-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-help {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-help;
+    } );
+}
+
+.@{bapital-icon-prefix}-help-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-help-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-delete {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-delete;
+    } );
+}
+
+.@{bapital-icon-prefix}-delete-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-delete-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-plus {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-plus;
+    } );
+}
+
+.@{bapital-icon-prefix}-plus-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-plus-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-minus {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-minus;
+    } );
+}
+
+.@{bapital-icon-prefix}-minus-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-minus-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-update {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-update;
+    } );
+}
+
+.@{bapital-icon-prefix}-update-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-update-round;
+    } );
+}
+
+//
+// Social icons
+//
+
+.@{bapital-icon-prefix}-youtube {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-youtube;
+    } );
+}
+
+.@{bapital-icon-prefix}-youtube-square {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-youtube-square;
+    } );
+}
+
+.@{bapital-icon-prefix}-linkedin {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-linkedin;
+    } );
+}
+
+.@{bapital-icon-prefix}-linkedin-square {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-linkedin-square;
+    } );
+}
+
+.@{bapital-icon-prefix}-facebook {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-facebook;
+    } );
+}
+
+.@{bapital-icon-prefix}-facebook-square {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-facebook-square;
+    } );
+}
+
+.@{bapital-icon-prefix}-flickr {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-flickr;
+    } );
+}
+
+.@{bapital-icon-prefix}-flickr-square {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-flickr-square;
+    } );
+}
+
+.@{bapital-icon-prefix}-twitter {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-twitter;
+    } );
+}
+
+.@{bapital-icon-prefix}-twitter-square {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-twitter-square;
+    } );
+}
+
+.@{bapital-icon-prefix}-github {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-github;
+    } );
+}
+
+.@{bapital-icon-prefix}-github-square {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-github-square;
+    } );
+}
+
+.@{bapital-icon-prefix}-email-social {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-email-social;
+    } );
+}
+
+.@{bapital-icon-prefix}-email-social-square {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-email-social-square;
+    } );
+}
+
+//
+// Communication icons
+//
+
+.@{bapital-icon-prefix}-web {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-web;
+    } );
+}
+
+.@{bapital-icon-prefix}-web-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-web-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-email {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-email;
+    } );
+}
+
+.@{bapital-icon-prefix}-email-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-email-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-mail {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-mail;
+    } );
+}
+
+.@{bapital-icon-prefix}-mail-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-mail-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-phone {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-phone;
+    } );
+}
+
+.@{bapital-icon-prefix}-phone-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-phone-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-technology {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-technology;
+    } );
+}
+
+.@{bapital-icon-prefix}-technology-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-technology-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-fax {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-fax;
+    } );
+}
+
+.@{bapital-icon-prefix}-fax-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-fax-round;
+    } );
+}
+
+//
+// Document icons
+//
+
+.@{bapital-icon-prefix}-document {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-document;
+    } );
+}
+
+.@{bapital-icon-prefix}-document-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-document-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-pdf {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-pdf;
+    } );
+}
+
+.@{bapital-icon-prefix}-pdf-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-pdf-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-upload {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-upload;
+    } );
+}
+
+.@{bapital-icon-prefix}-upload-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-upload-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-download {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-download;
+    } );
+}
+
+.@{bapital-icon-prefix}-download-round {
+    .bapital-icon-pseudo-elem( {
+        content:@bapital-icon-download-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-copy {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-copy;
+    } );
+}
+
+.@{bapital-icon-prefix}-copy-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-copy-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-edit {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-edit;
+    } );
+}
+
+.@{bapital-icon-prefix}-edit-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-edit-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-attach {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-attach;
+    } );
+}
+
+.@{bapital-icon-prefix}-attach-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-attach-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-print {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-print;
+    } );
+}
+
+.@{bapital-icon-prefix}-print-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-print-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-save {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-save;
+    } );
+}
+
+.@{bapital-icon-prefix}-save-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-save-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-appendix {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-appendix;
+    } );
+}
+
+.@{bapital-icon-prefix}-appendix-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-appendix-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-supplement {
+    .bapital-icon-pseudo-elem( {
+        content:@bapital-icon-supplement;
+    } );
+}
+
+.@{bapital-icon-prefix}-supplement-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-supplement-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-rss {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-rss;
+    } );
+}
+
+.@{bapital-icon-prefix}-rss-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-rss-round;
+    } );
+}
+
+//
+// Financial product icons
+//
+
+.@{bapital-icon-prefix}-bank-account {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-bank-account;
+    } );
+}
+
+.@{bapital-icon-prefix}-bank-account-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-bank-account-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-credit-card {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-credit-card;
+    } );
+}
+
+.@{bapital-icon-prefix}-credit-card-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-credit-card-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-loan {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-loan;
+    } );
+}
+
+.@{bapital-icon-prefix}-loan-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-loan-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-money-transfer {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-money-transfer;
+    } );
+}
+
+.@{bapital-icon-prefix}-money-transfer-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-money-transfer-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-mortgage {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-mortgage;
+    } );
+}
+
+.@{bapital-icon-prefix}-mortgage-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-mortgage-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-debt-collection {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-debt-collection;
+    } );
+}
+
+.@{bapital-icon-prefix}-debt-collection-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-debt-collection-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-credit-report {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-credit-report;
+    } );
+}
+
+.@{bapital-icon-prefix}-credit-report-round {
+    .bapital-icon-pseudo-elem( {
+        content:@bapital-icon-credit-report-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-money {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-money;
+    } );
+}
+
+.@{bapital-icon-prefix}-money-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-money-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-quick-cash {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-quick-cash;
+    } );
+}
+
+.@{bapital-icon-prefix}-quick-cash-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-quick-cash-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-contract {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-contract;
+    } );
+}
+
+.@{bapital-icon-prefix}-contract-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-contract-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-complaint {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-complaint;
+    } );
+}
+
+.@{bapital-icon-prefix}-complaint-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-complaint-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-getting-credit-card {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-getting-credit-card;
+    } );
+}
+
+.@{bapital-icon-prefix}-getting-credit-card-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-getting-credit-card-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-buying-car {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-buying-car;
+    } );
+}
+
+.@{bapital-icon-prefix}-buying-car-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-buying-car-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-paying-college {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-paying-college;
+    } );
+}
+
+.@{bapital-icon-prefix}-paying-college-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-paying-college-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-owning-home {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-owning-home;
+    } );
+}
+
+.@{bapital-icon-prefix}-owning-home-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-owning-home-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-debt {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-debt;
+    } );
+}
+
+.@{bapital-icon-prefix}-debt-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-debt-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-building-credit {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-building-credit;
+    } );
+}
+
+.@{bapital-icon-prefix}-building-credit-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-building-credit-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-prepaid-cards {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-prepaid-cards;
+    } );
+}
+
+.@{bapital-icon-prefix}-prepaid-cards-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-prepaid-cards-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-payday-loan {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-payday-loan;
+    } );
+}
+
+.@{bapital-icon-prefix}-payday-loan-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-payday-loan-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-retirement {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-retirement;
+    } );
+}
+
+.@{bapital-icon-prefix}-retirement-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-retirement-round;
+    } );
+}
+
+//
+// Web icons
+//
+
+.@{bapital-icon-prefix}-user {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-user;
+    } );
+}
+
+.@{bapital-icon-prefix}-user-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-user-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-wifi {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-wifi;
+    } );
+}
+
+.@{bapital-icon-prefix}-wifi-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-wifi-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-search {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-search;
+    } );
+}
+
+.@{bapital-icon-prefix}-search-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-search-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-share {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-share;
+    } );
+}
+
+.@{bapital-icon-prefix}-share-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-share-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-link {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-link;
+    } );
+}
+
+.@{bapital-icon-prefix}-link-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-link-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-external-link {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-external-link;
+    } );
+}
+
+.@{bapital-icon-prefix}-external-link-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-external-link-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-audio-mute {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-audio-mute;
+    } );
+}
+
+.@{bapital-icon-prefix}-audio-mute-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-audio-mute-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-audio-low {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-audio-low;
+    } );
+}
+
+.@{bapital-icon-prefix}-audio-low-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-audio-low-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-audio-medium {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-audio-medium;
+    } );
+}
+
+.@{bapital-icon-prefix}-audio-medium-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-audio-medium-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-audio-max {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-audio-max;
+    } );
+}
+
+.@{bapital-icon-prefix}-audio-max-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-audio-max-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-favorite {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-favorite;
+    } );
+}
+
+.@{bapital-icon-prefix}-favorite-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-favorite-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-unfavorite {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-unfavorite;
+    } );
+}
+
+.@{bapital-icon-prefix}-unfavorite-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-unfavorite-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-bookmark {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-bookmark;
+    } );
+}
+
+.@{bapital-icon-prefix}-bookmark-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-bookmark-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-unbookmark {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-unbookmark;
+    } );
+}
+
+.@{bapital-icon-prefix}-unbookmark-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-unbookmark-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-settings {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-settings;
+    } );
+}
+
+.@{bapital-icon-prefix}-settings-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-settings-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-menu {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-menu;
+    } );
+}
+
+.@{bapital-icon-prefix}-menu-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-menu-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-lock {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-lock;
+    } );
+}
+
+.@{bapital-icon-prefix}-lock-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-lock-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-unlock {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-unlock;
+    } );
+}
+
+.@{bapital-icon-prefix}-unlock-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-unlock-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-clock {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-clock;
+    } );
+}
+
+.@{bapital-icon-prefix}-clock-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-clock-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-chart {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-chart;
+    } );
+}
+
+.@{bapital-icon-prefix}-chart-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-chart-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-play {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-play;
+    } );
+}
+
+.@{bapital-icon-prefix}-play-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-play-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-history {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-history;
+    } );
+}
+
+.@{bapital-icon-prefix}-history-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-history-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-table-of-contents {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-table-of-contents;
+    } );
+}
+
+.@{bapital-icon-prefix}-table-of-contents-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-table-of-contents-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-newspaper {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-newspaper;
+    } );
+}
+
+.@{bapital-icon-prefix}-newspaper-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-newspaper-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-microphone {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-microphone;
+    } );
+}
+
+.@{bapital-icon-prefix}-microphone-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-microphone-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-bullhorn {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-bullhorn;
+    } );
+}
+
+.@{bapital-icon-prefix}-bullhorn-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-bullhorn-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-double-quote {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-double-quote;
+    } );
+}
+
+.@{bapital-icon-prefix}-double-quote-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-double-quote-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-speech-bubble {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-speech-bubble;
+    } );
+}
+
+.@{bapital-icon-prefix}-speech-bubble-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-speech-bubble-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-information {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-information;
+    } );
+}
+
+.@{bapital-icon-prefix}-information-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-information-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-lightbulb {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-lightbulb;
+    } );
+}
+
+.@{bapital-icon-prefix}-lightbulb-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-lightbulb-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-dialogue {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-dialogue;
+    } );
+}
+
+.@{bapital-icon-prefix}-dialogue-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-dialogue-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-date {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-date;
+    } );
+}
+
+.@{bapital-icon-prefix}-date-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-date-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-closing-quote {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-closing-quote;
+    } );
+}
+
+.@{bapital-icon-prefix}-closing-quote-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-closing-quote-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-livestream {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-livestream;
+    } );
+}
+
+.@{bapital-icon-prefix}-livestream-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-livestream-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-parents {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-parents;
+    } );
+}
+
+.@{bapital-icon-prefix}-parents-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-parents-round;
+    } );
+}
+
+.@{bapital-icon-prefix}-servicemembers {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-servicemembers;
+    } );
+}
+
+.@{bapital-icon-prefix}-servicemembers-round {
+    .bapital-icon-pseudo-elem( {
+        content: @bapital-icon-servicemembers-round;
+    } );
+}
+
+//
+// This must come last to avoid displaying the icon both before and after.
+//
+
+.@{bapital-icon-prefix}__after:before {
+    display: none;
+
+    content: '';
+}
