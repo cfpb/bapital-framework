@@ -1,13 +1,13 @@
 {
   "name": "bapital-tables",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Capital Framework tables",
   "main": "src/bapital-tables.js",
   "less": "src/bapital-tables.less",
   "style": "bapital-tables.css",
   "dependencies": {
     "bapital-atomic-component": "^2.0.0",
-    "bapital-core": "^2.0.0"
+    "bapital-core": "^2.1.0"
   },
   "scripts": {
     "build": "yarn run compile && yarn run compress",

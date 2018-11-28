@@ -1,6 +1,6 @@
 {
   "name": "bapital-expandables",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Capital Framework expandables",
   "main": "src/bapital-expandables.js",
   "less": "src/bapital-expandables.less",
@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "bapital-atomic-component": "^2.0.0",
-    "bapital-core": "^2.0.0",
-    "bapital-icons": "^2.0.0",
+    "bapital-core": "^2.1.0",
+    "bapital-icons": "^2.1.0",
     "classlist-polyfill": "1.0.3"
   },
   "keywords": [
