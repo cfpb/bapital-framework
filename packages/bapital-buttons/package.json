@@ -1,12 +1,12 @@
 {
   "name": "bapital-buttons",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Capital Framework buttons",
   "less": "src/bapital-buttons.less",
   "style": "bapital-buttons.css",
   "dependencies": {
-    "bapital-core": "^1.0.1",
-    "bapital-icons": "^1.0.1"
+    "bapital-core": "^1.1.0",
+    "bapital-icons": "^1.1.0"
   },
   "scripts": {
     "build": "yarn run compile && yarn run compress && yarn run docs",

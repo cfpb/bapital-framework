@@ -1,6 +1,6 @@
 {
   "name": "bapital-icons",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Capital Framework icons",
   "less": "src/bapital-icons.less",
   "style": "bapital-icons.css",
@@ -10,7 +10,7 @@
     "compress": "uglifycss bapital-icons.css > bapital-icons.min.css"
   },
   "dependencies": {
-    "bapital-core": "^1.0.1"
+    "bapital-core": "^1.1.0"
   },
   "keywords": [
     "icons"

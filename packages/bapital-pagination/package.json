@@ -1,6 +1,6 @@
 {
   "name": "bapital-pagination",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Capital Framework pagination",
   "less": "src/bapital-pagination.less",
   "style": "bapital-pagination.css",
@@ -10,9 +10,9 @@
     "compress": "uglifycss bapital-pagination.css > bapital-pagination.min.css"
   },
   "dependencies": {
-    "bapital-buttons": "^1.0.1",
-    "bapital-core": "^1.0.1",
-    "bapital-icons": "^1.0.1"
+    "bapital-buttons": "^1.1.0",
+    "bapital-core": "^1.1.0",
+    "bapital-icons": "^1.1.0"
   },
   "keywords": [
     "pagination"

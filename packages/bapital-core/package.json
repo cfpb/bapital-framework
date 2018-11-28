@@ -1,6 +1,6 @@
 {
   "name": "bapital-core",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Capital Framework core styles",
   "less": "src/bapital-core.less",
   "style": "bapital-core.css",
