@@ -10,12 +10,14 @@
     "url": "https://cfpb.github.io/"
   },
   "license": "SEE LICENSE IN TERMS.md",
-  "keywords": [
-    "tables"
-  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/cfpb/bapital-framework.git"
+  },
+  "scripts": {
+    "build": "yarn run compile && yarn run compress",
+    "compile": "lessc src/bapital-framework.less bapital-framework.css --autoprefix='last 2 versions','Explorer >= 8'",
+    "compress": "uglifycss bapital-framework.css > bapital-framework.min.css"
   },
   "bugs": {
     "url": "https://github.com/cfpb/bapital-framework/issues"
@@ -33,6 +35,5 @@
     "bapital-pagination": "^1.0.1",
     "bapital-tables": "^1.0.1",
     "bapital-typography": "^1.0.1"
-  },
-  "gitHead": "d801255ecf931efde71143f2225b3b5033ecb102"
+  }
 }

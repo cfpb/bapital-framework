@@ -8,8 +8,10 @@
     "lerna": "^3.4.3"
   },
   "scripts": {
-    "build": "lerna run build",
-    "bootstrap": "lerna bootstrap"
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build --parallel",
+    "publish": "lerna publish",
+    "bump": "lerna version"
   },
   "version": "1.0.0",
   "main": "index.js",

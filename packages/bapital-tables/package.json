@@ -9,7 +9,17 @@
     "bapital-atomic-component": "^1.0.1",
     "bapital-core": "^1.0.1"
   },
+  "scripts": {
+    "build": "yarn run compile && yarn run compress",
+    "compile": "lessc src/bapital-tables.less bapital-tables.css --autoprefix='last 2 versions','Explorer >= 8'",
+    "compress": "uglifycss bapital-tables.css > bapital-tables.min.css"
+  },
   "keywords": [
     "tables"
-  ]
+  ],
+  "devDependencies": {
+    "less": "^3.8.1",
+    "less-plugin-autoprefix": "^2.0.0",
+    "uglifycss": "^0.0.29"
+  }
 }

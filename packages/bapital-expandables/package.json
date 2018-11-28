@@ -6,8 +6,9 @@
   "less": "src/bapital-expandables.less",
   "style": "bapital-expandables.css",
   "scripts": {
-    "//": "This is a convenience script to allow running `npm test` from this dir.",
-    "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
+    "build": "yarn run compile && yarn run compress",
+    "compile": "lessc src/bapital-expandables.less bapital-expandables.css --autoprefix='last 2 versions','Explorer >= 8'",
+    "compress": "uglifycss bapital-expandables.css > bapital-expandables.min.css"
   },
   "dependencies": {
     "bapital-atomic-component": "^1.0.1",
@@ -18,5 +19,9 @@
   "keywords": [
     "expandable"
   ],
-  "gitHead": "d801255ecf931efde71143f2225b3b5033ecb102"
+  "devDependencies": {
+    "less": "^3.8.1",
+    "less-plugin-autoprefix": "^2.0.0",
+    "uglifycss": "^0.0.29"
+  }
 }

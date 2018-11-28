@@ -63,5 +63,3 @@ test/build-test-coverage/
 #############
 yarn-error.log
 node_modules/
-packages/**/*.css
-packages/**/usage.html

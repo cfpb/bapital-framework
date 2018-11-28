@@ -5,8 +5,9 @@
   "less": "src/bapital-pagination.less",
   "style": "bapital-pagination.css",
   "scripts": {
-    "//": "This is a convenience script to allow running `npm test` from this dir.",
-    "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
+    "build": "yarn run compile && yarn run compress",
+    "compile": "lessc src/bapital-pagination.less bapital-pagination.css --autoprefix='last 2 versions','Explorer >= 8'",
+    "compress": "uglifycss bapital-pagination.css > bapital-pagination.min.css"
   },
   "dependencies": {
     "bapital-buttons": "^1.0.1",
@@ -16,5 +17,9 @@
   "keywords": [
     "pagination"
   ],
-  "gitHead": "d801255ecf931efde71143f2225b3b5033ecb102"
+  "devDependencies": {
+    "less": "^3.8.1",
+    "less-plugin-autoprefix": "^2.0.0",
+    "uglifycss": "^0.0.29"
+  }
 }

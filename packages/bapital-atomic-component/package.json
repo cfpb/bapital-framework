@@ -1,0 +1,24 @@
+{
+  "name": "bapital-atomic-component",
+  "version": "1.0.1",
+  "description": "Capital Framework atomic component micro-framework",
+  "less": "src/bapital-atomic-component.less",
+  "style": "bapital-atomic-component.css",
+  "dependencies": {
+    "dom-delegate": "^2.0.3"
+  },
+  "scripts": {
+    "build": "yarn run compile && yarn run compress",
+    "compile": "lessc src/bapital-atomic-component.less bapital-atomic-component.css --autoprefix='last 2 versions','Explorer >= 8'",
+    "compress": "uglifycss bapital-atomic-component.css > bapital-atomic-component.min.css"
+  },
+  "keywords": [
+    "atomic-component"
+  ],
+  "devDependencies": {
+    "less": "^3.8.1",
+    "less-plugin-autoprefix": "^2.0.0",
+    "uglifycss": "^0.0.29",
+    "webpack": "^4.26.1"
+  }
+}

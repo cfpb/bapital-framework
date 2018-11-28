@@ -5,8 +5,9 @@
   "less": "src/bapital-grid.less",
   "style": "bapital-grid.css",
   "scripts": {
-    "//": "This is a convenience script to allow running `npm test` from this dir.",
-    "test": "case $(pwd) in */cf/src/*) cd ../.. && npm test;; esac"
+    "build": "yarn run compile && yarn run compress",
+    "compile": "lessc src/bapital-grid.less bapital-grid.css --autoprefix='last 2 versions','Explorer >= 8'",
+    "compress": "uglifycss bapital-grid.css > bapital-grid.min.css"
   },
   "dependencies": {
     "normalize-css": "^2.0.0",
@@ -15,5 +16,10 @@
   "keywords": [
     "grid"
   ],
-  "gitHead": "d801255ecf931efde71143f2225b3b5033ecb102"
+  "devDependencies": {
+    "less": "^3.8.1",
+    "less-plugin-autoprefix": "^2.0.0",
+    "marked": "^0.5.2",
+    "uglifycss": "^0.0.29"
+  }
 }

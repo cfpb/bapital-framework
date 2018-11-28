@@ -9,12 +9,18 @@
     "bapital-icons": "^1.0.1"
   },
   "scripts": {
-    "build": "lessc src/bapital-buttons.less bapital-buttons.css"
+    "build": "yarn run compile && yarn run compress && yarn run docs",
+    "compile": "lessc src/bapital-buttons.less bapital-buttons.css --autoprefix='last 2 versions','Explorer >= 8'",
+    "compress": "uglifycss bapital-buttons.css > bapital-buttons.min.css",
+    "docs": "marked usage.md > usage.html"
   },
   "keywords": [
     "buttons"
   ],
   "devDependencies": {
-    "less": "^3.8.1"
+    "less": "^3.8.1",
+    "less-plugin-autoprefix": "^2.0.0",
+    "marked": "^0.5.2",
+    "uglifycss": "^0.0.29"
   }
 }
