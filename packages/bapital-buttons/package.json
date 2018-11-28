@@ -4,16 +4,14 @@
   "description": "Capital Framework buttons",
   "less": "src/bapital-buttons.less",
   "style": "bapital-buttons.css",
-  "scripts": {
-    "//": "This is a convenience script to allow running `npm test` from this dir.",
-    "test": "case $(pwd) in */capital-framework/src/*) cd ../.. && npm test;; esac"
-  },
   "dependencies": {
     "bapital-core": "^1.0.1",
     "bapital-icons": "^1.0.1"
   },
+  "scripts": {
+    "build": "lessc bapital-buttons.less bapital-buttons.css"
+  },
   "keywords": [
     "buttons"
-  ],
-  "gitHead": "d801255ecf931efde71143f2225b3b5033ecb102"
+  ]
 }

@@ -5,9 +5,10 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.4.3"
+    "lerna": "^3.4.3",
+    "less": "^3.8.1"
   },
   "scripts": {
-    "lerna": "lerna"
+    "build": "lerna run build"
   }
 }
