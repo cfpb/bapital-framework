@@ -61,5 +61,6 @@ test/build-test-coverage/
 
 # Front-End #
 #############
+yarn-error.log
 node_modules/
 packages/**/*.css

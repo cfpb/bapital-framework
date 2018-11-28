@@ -1,14 +1,19 @@
 {
-  "name": "root",
+  "name": "bapital-framework",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.4.3",
-    "less": "^3.8.1"
+    "lerna": "^3.4.3"
   },
   "scripts": {
-    "build": "lerna run build"
-  }
+    "build": "lerna run build",
+    "bootstrap": "lerna bootstrap"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cfpb/bapital-framework.git",
+  "author": "CFPB <tech@cfpb.gov>",
+  "license": "CC-0"
 }
