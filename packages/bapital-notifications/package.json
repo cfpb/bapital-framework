@@ -1,6 +1,6 @@
 {
   "name": "bapital-notifications",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Capital Framework notifications",
   "less": "src/bapital-notifications.less",
   "style": "bapital-notifications.css",
@@ -10,8 +10,8 @@
     "compress": "uglifycss bapital-notifications.css > bapital-notifications.min.css"
   },
   "dependencies": {
-    "bapital-core": "^1.1.0",
-    "bapital-icons": "^1.1.0"
+    "bapital-core": "^2.0.0",
+    "bapital-icons": "^2.0.0"
   },
   "keywords": [
     "notifications"

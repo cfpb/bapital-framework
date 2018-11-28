@@ -1,6 +1,6 @@
 {
   "name": "bapital-framework",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "description": "CFPB's UI framework",
   "main": "src/bapital-framework.js",
   "less": "src/bapital-framework.less",
@@ -23,18 +23,18 @@
     "url": "https://github.com/cfpb/bapital-framework/issues"
   },
   "dependencies": {
-    "bapital-atomic-component": "^1.1.0",
-    "bapital-buttons": "^1.2.3",
-    "bapital-core": "^1.1.0",
-    "bapital-expandables": "^1.1.0",
-    "bapital-forms": "^1.2.3",
-    "bapital-grid": "^1.1.0",
-    "bapital-icons": "^1.1.0",
-    "bapital-layout": "^1.1.0",
-    "bapital-notifications": "^1.1.0",
-    "bapital-pagination": "^1.2.3",
-    "bapital-tables": "^1.1.0",
-    "bapital-typography": "^1.1.0"
+    "bapital-atomic-component": "^2.0.0",
+    "bapital-buttons": "^2.0.0",
+    "bapital-core": "^2.0.0",
+    "bapital-expandables": "^2.0.0",
+    "bapital-forms": "^2.0.0",
+    "bapital-grid": "^2.0.0",
+    "bapital-icons": "^2.0.0",
+    "bapital-layout": "^2.0.0",
+    "bapital-notifications": "^2.0.0",
+    "bapital-pagination": "^2.0.0",
+    "bapital-tables": "^2.0.0",
+    "bapital-typography": "^2.0.0"
   },
   "gitHead": "62ef3b1fe617c5e30b3bac3b4b1cd26f78f7bc7c"
 }

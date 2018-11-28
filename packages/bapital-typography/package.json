@@ -1,6 +1,6 @@
 {
   "name": "bapital-typography",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Capital Framework typography",
   "less": "src/bapital-typography.less",
   "style": "bapital-typography.css",
@@ -10,8 +10,8 @@
     "compress": "uglifycss bapital-typography.css > bapital-typography.min.css"
   },
   "dependencies": {
-    "bapital-core": "^1.1.0",
-    "bapital-icons": "^1.1.0"
+    "bapital-core": "^2.0.0",
+    "bapital-icons": "^2.0.0"
   },
   "keywords": [
     "typography"
