@@ -18,6 +18,7 @@
     "buttons"
   ],
   "devDependencies": {
+    "lerna-changelog": "^0.8.2",
     "less": "^3.8.1",
     "less-plugin-autoprefix": "^2.0.0",
     "marked": "^0.5.2",
