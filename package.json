@@ -16,7 +16,8 @@
   "scripts": {
     "build": "lerna run build --parallel",
     "changelog": "lerna-changelog",
-    "publish": "lerna publish"
+    "publish": "lerna publish",
+    "version": "lerna-changelog --from v1.0.0 > CHANGELOG.md && git add CHANGELOG.md"
   },
   "version": "1.0.0",
   "main": "index.js",
