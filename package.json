@@ -16,7 +16,6 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --parallel",
-    "bump": "lerna version",
     "changelog": "lerna-changelog",
     "publish": "lerna publish"
   },
