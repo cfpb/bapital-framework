@@ -3,6 +3,19 @@
 
 #### :rocket: Enhancement
 * `bapital-buttons`
+  * [#13](https://github.com/cfpb/bapital-framework/pull/13) Update buttons text color to accommodate new design requirements ([@contolini](https://github.com/contolini))
+
+#### :house: Internal
+* [#12](https://github.com/cfpb/bapital-framework/pull/12) Move changelog options to package.json ([@contolini](https://github.com/contolini))
+
+#### Committers: 1
+- Chris Contolini ([@contolini](https://github.com/contolini))
+
+
+## v2.4.0 (2018-12-04)
+
+#### :rocket: Enhancement
+* `bapital-buttons`
   * [#10](https://github.com/cfpb/bapital-framework/pull/10) Updated the cool colors ([@contolini](https://github.com/contolini))
 
 #### :house: Internal
