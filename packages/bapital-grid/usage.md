@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-grid</title>
+  <link rel="stylesheet" href="bapital-grid.css">
+</head>
+<body>
+
 The grid component is a suite of Less variable and mixins that enables you to
 lay out a flexible 12-column grid with fixed-size gutters.
 (Column widths will expand and contract with the width of the page,
@@ -513,3 +523,6 @@ content first in the source order, but it's here if you absolutely need it.
     </section>
 </div>
 ```
+
+</body>
+</html>

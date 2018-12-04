@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-forms</title>
+  <link rel="stylesheet" href="bapital-forms.css">
+</head>
+<body>
+
+
 The bapital-forms component provides extensions to the basic form styles for
 Capital Framework.
 
@@ -1212,3 +1223,6 @@ Generally this is only useful for documentation purposes.
     </div>
 </form>
 ```
+
+</body>
+</html>

@@ -63,3 +63,4 @@ test/build-test-coverage/
 #############
 yarn-error.log
 node_modules/
+usage.md

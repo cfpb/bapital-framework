@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-layout</title>
+  <link rel="stylesheet" href="bapital-layout.css">
+</head>
+<body>
+
 A set of HTML and CSS layout helpers.
 
 [`bapital-core`](../bapital-core) and [`bapital-grid`](../bapital-grid) components are
@@ -2003,3 +2013,6 @@ emphasize and set apart the content that is included.
     </p>
 </div>
 ```
+
+</body>
+</html>

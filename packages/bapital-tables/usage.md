@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-tables</title>
+  <link rel="stylesheet" href="bapital-tables.css">
+</head>
+<body>
+
 The bapital-tables component formats tables, and provides an easy way to make
 tables sortable.
 
@@ -795,3 +805,7 @@ striped on small screens (unlike the `o-table__striped` class, below).
     </table>
 </div>
 ```
+
+<script src="bapital-tables.js"></script>
+</body>
+</html>

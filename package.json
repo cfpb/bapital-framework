@@ -5,12 +5,19 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.4.3"
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "lerna": "^3.4.3",
+    "lerna-changelog": "^0.8.2",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.26.1"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --parallel",
     "bump": "lerna version",
+    "changelog": "lerna-changelog",
     "publish": "lerna publish"
   },
   "version": "1.0.0",

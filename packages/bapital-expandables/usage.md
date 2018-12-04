@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-expandables</title>
+  <link rel="stylesheet" href="bapital-expandables.css">
+</head>
+<body>
+
 Expandables are components that have additional content that can be
 opened (expanded) and closed (collapsed). They can appear on their own
 or in groups.
@@ -707,3 +717,7 @@ to activate the accordion mode.
     </div>
 </div>
 ```
+<script src="Expandables.min.js"></script>
+<script>Expandable.init();</script>
+</body>
+</html>

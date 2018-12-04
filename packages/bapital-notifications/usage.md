@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-notifications</title>
+  <link rel="stylesheet" href="bapital-notifications.css">
+</head>
+<body>
+
 The bapital-notifications component provides notification boxes
 for Capital Framework.
 
@@ -225,3 +235,6 @@ expected and encountered an error.
 
 Notifications are hidden by default; you can toggle their visibility by adding
 or removing the `m-notification__visible` class to the base element.
+
+</body>
+</html>

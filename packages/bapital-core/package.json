@@ -5,9 +5,10 @@
   "less": "src/bapital-core.less",
   "style": "bapital-core.css",
   "scripts": {
-    "build": "yarn run compile && yarn run compress",
+    "build": "yarn run compile && yarn run compress && yarn run docs",
     "compile": "lessc src/bapital-core.less bapital-core.css --autoprefix='last 2 versions','Explorer >= 8'",
-    "compress": "uglifycss bapital-core.css > bapital-core.min.css"
+    "compress": "uglifycss bapital-core.css > bapital-core.min.css",
+    "docs": "marked usage.md > usage.html"
   },
   "dependencies": {
     "normalize-css": "^2.0.0",
@@ -16,6 +17,7 @@
   "devDependencies": {
     "less": "^3.8.1",
     "less-plugin-autoprefix": "^2.0.0",
+    "marked": "^0.5.2",
     "uglifycss": "^0.0.29"
   }
 }

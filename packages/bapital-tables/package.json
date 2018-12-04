@@ -10,9 +10,11 @@
     "bapital-core": "^2.1.0"
   },
   "scripts": {
-    "build": "yarn run compile && yarn run compress",
-    "compile": "lessc src/bapital-tables.less bapital-tables.css --autoprefix='last 2 versions','Explorer >= 8'",
-    "compress": "uglifycss bapital-tables.css > bapital-tables.min.css"
+    "build": "yarn run css && yarn run js && yarn run compress && yarn run docs",
+    "compress": "uglifycss bapital-tables.css > bapital-tables.min.css",
+    "css": "lessc src/bapital-tables.less bapital-tables.css --autoprefix='last 2 versions','Explorer >= 8'",
+    "docs": "marked usage.md > usage.html",
+    "js": "webpack --config ../../webpack-config.js src/Table.js -o Table.min.js"
   },
   "keywords": [
     "tables"

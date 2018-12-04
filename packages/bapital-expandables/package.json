@@ -6,9 +6,11 @@
   "less": "src/bapital-expandables.less",
   "style": "bapital-expandables.css",
   "scripts": {
-    "build": "yarn run compile && yarn run compress",
-    "compile": "lessc src/bapital-expandables.less bapital-expandables.css --autoprefix='last 2 versions','Explorer >= 8'",
-    "compress": "uglifycss bapital-expandables.css > bapital-expandables.min.css"
+    "build": "yarn run css && yarn run js && yarn run compress && yarn run docs",
+    "compress": "uglifycss bapital-expandables.css > bapital-expandables.min.css",
+    "css": "lessc src/bapital-expandables.less bapital-expandables.css --autoprefix='last 2 versions','Explorer >= 8'",
+    "docs": "marked usage.md > usage.html",
+    "js": "webpack --config ../../webpack-config.js src/Expandable.js -o Expandable.min.js"
   },
   "dependencies": {
     "bapital-atomic-component": "^2.0.0",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "less": "^3.8.1",
     "less-plugin-autoprefix": "^2.0.0",
-    "uglifycss": "^0.0.29"
+    "uglifycss": "^0.0.29",
+    "webpack-cli": "^3.1.2"
   }
 }

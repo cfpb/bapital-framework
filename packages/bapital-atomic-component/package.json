@@ -8,9 +8,10 @@
     "dom-delegate": "^2.0.3"
   },
   "scripts": {
-    "build": "yarn run compile && yarn run compress",
+    "build": "yarn run compile && yarn run compress && yarn run docs",
     "compile": "lessc src/bapital-atomic-component.less bapital-atomic-component.css --autoprefix='last 2 versions','Explorer >= 8'",
-    "compress": "uglifycss bapital-atomic-component.css > bapital-atomic-component.min.css"
+    "compress": "uglifycss bapital-atomic-component.css > bapital-atomic-component.min.css",
+    "docs": "marked usage.md > usage.html"
   },
   "keywords": [
     "atomic-component"
@@ -18,7 +19,6 @@
   "devDependencies": {
     "less": "^3.8.1",
     "less-plugin-autoprefix": "^2.0.0",
-    "uglifycss": "^0.0.29",
-    "webpack": "^4.26.1"
+    "uglifycss": "^0.0.29"
   }
 }

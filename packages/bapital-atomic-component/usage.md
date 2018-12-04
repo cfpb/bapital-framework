@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-atomic-component</title>
+  <link rel="stylesheet" href="bapital-atomic-component.css">
+</head>
+<body>
+
 Atomic Component is a micro framework for building Atomic Design components
 that utilize JavaScript. It is a dependency of other packages and isn't used
 on its own.
@@ -69,3 +79,7 @@ const NotificationMolecule = Molecule.extend( {
 NotificationMolecule.constants = CONSTANTS;
 NotificationMolecule.init();
 ```
+
+<script src="bapital-atomic-component.js"></script>
+</body>
+</html>

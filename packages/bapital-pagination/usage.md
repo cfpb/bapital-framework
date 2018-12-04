@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-pagination</title>
+  <link rel="stylesheet" href="bapital-pagination.css">
+</head>
+<body>
+
 The bapital-pagination component provides a responsive approach to multipage page
 navigation for Capital Framework.
 
@@ -238,3 +248,6 @@ For example:
 
 - `@bp-xs-max`: On small screens, the buttons display next to each
   other, stacked on top of the form.
+
+</body>
+</html>

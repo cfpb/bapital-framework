@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-typography</title>
+  <link rel="stylesheet" href="bapital-typography.css">
+</head>
+<body>
+
 The bapital-typography component includes multiple patterns for headings,
 links, lists, and other advanced typographic treatments.
 
@@ -623,3 +633,6 @@ you should use the `aside` element.
     </footer>
 </aside>
 ```
+
+</body>
+</html>

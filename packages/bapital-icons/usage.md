@@ -1,9 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-icons</title>
+  <link rel="stylesheet" href="bapital-icons.css">
+</head>
+<body>
+
 The bapital-icon component provides SVG icons for Capital Framework.
 This component can be used by itself, but is designed to work with Capital
 Framework.
-
-
-
 
 ## Table of contents
 
@@ -2247,3 +2254,6 @@ Less files.
      text-align: right;
 }
 ```
+
+</body>
+</html>

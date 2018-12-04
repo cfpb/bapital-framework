@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-buttons</title>
+  <link rel="stylesheet" href="bapital-buttons.css">
+</head>
+<body>
+
 The bapital-buttons component provides extensions to the basic button styles for
 Capital Framework.
 
@@ -619,3 +629,6 @@ outside the scope of the initial svg icon work._
     <button class="a-btn a-btn__super">Maybe So</button>
 </div>
 ```
+
+</body>
+</html>

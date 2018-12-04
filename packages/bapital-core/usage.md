@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bapital-core</title>
+  <link rel="stylesheet" href="bapital-core.css">
+</head>
+<body>
+
 The bapital-core component acts as the backbone for Capital Framework.
 It's made up of four child components `bapital-vars`, `bapital-media-queries`,
 `bapital-utilities`, and `bapital-base`.
@@ -1255,3 +1265,6 @@ This is an example of a fenced code block following some paragraph text.
 ```
 
 _Do not include indentation or white space within the `<code>` tags unless you want it to be rendered._
+
+</body>
+</html>
