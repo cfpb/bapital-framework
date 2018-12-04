@@ -1,6 +1,6 @@
 {
   "name": "bapital-layout",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Capital Framework layouts",
   "less": "src/bapital-layout.less",
   "style": "bapital-layout.css",
@@ -10,8 +10,8 @@
     "compress": "uglifycss bapital-layout.css > bapital-layout.min.css"
   },
   "dependencies": {
-    "bapital-core": "^2.1.0",
-    "bapital-grid": "^2.0.0"
+    "bapital-core": "^2.2.0",
+    "bapital-grid": "^2.2.0"
   },
   "keywords": [
     "layout"

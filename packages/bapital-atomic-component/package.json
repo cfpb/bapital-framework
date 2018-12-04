@@ -1,6 +1,6 @@
 {
   "name": "bapital-atomic-component",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "description": "Capital Framework atomic component micro-framework",
   "less": "src/bapital-atomic-component.less",
   "style": "bapital-atomic-component.css",
