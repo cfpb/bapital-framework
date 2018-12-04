@@ -19,6 +19,10 @@
     "publish": "lerna publish",
     "version": "lerna-changelog --from v1.0.0 > CHANGELOG.md && git add CHANGELOG.md"
   },
+  "changelog": {
+    "cacheDir": ".changelog",
+    "nextVersion": "Changelog"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:cfpb/bapital-framework.git",
