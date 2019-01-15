@@ -23,18 +23,18 @@
     "url": "https://github.com/cfpb/bapital-framework/issues"
   },
   "dependencies": {
-    "bapital-atomic-component": "^3.0.0",
-    "bapital-buttons": "^3.0.1",
-    "bapital-core": "^3.0.0",
-    "bapital-expandables": "^3.0.0",
+    "bapital-atomic-component": "^4.0.0",
+    "bapital-buttons": "^4.0.0",
+    "bapital-core": "^4.0.0",
+    "bapital-expandables": "^4.0.0",
     "bapital-forms": "^4.0.0",
-    "bapital-grid": "^3.0.0",
-    "bapital-icons": "^3.0.0",
-    "bapital-layout": "^3.0.0",
-    "bapital-notifications": "^3.0.0",
-    "bapital-pagination": "^3.0.1",
-    "bapital-tables": "^3.0.0",
-    "bapital-typography": "^3.0.0"
+    "bapital-grid": "^4.0.0",
+    "bapital-icons": "^4.0.0",
+    "bapital-layout": "^4.0.0",
+    "bapital-notifications": "^4.0.0",
+    "bapital-pagination": "^4.0.0",
+    "bapital-tables": "^4.0.0",
+    "bapital-typography": "^4.0.0"
   },
   "gitHead": "62ef3b1fe617c5e30b3bac3b4b1cd26f78f7bc7c"
 }

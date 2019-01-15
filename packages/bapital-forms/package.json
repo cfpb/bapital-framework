@@ -10,10 +10,10 @@
     "compress": "uglifycss bapital-forms.css > bapital-core.min.css"
   },
   "dependencies": {
-    "bapital-buttons": "^3.0.1",
-    "bapital-core": "^3.0.0",
-    "bapital-grid": "^3.0.0",
-    "bapital-icons": "^3.0.0"
+    "bapital-buttons": "^4.0.0",
+    "bapital-core": "^4.0.0",
+    "bapital-grid": "^4.0.0",
+    "bapital-icons": "^4.0.0"
   },
   "keywords": [
     "forms"
