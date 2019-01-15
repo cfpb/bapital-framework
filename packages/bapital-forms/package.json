@@ -1,6 +1,6 @@
 {
   "name": "bapital-forms",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Capital Framework form fields",
   "less": "src/bapital-forms.less",
   "style": "bapital-forms.css",
@@ -10,7 +10,7 @@
     "compress": "uglifycss bapital-forms.css > bapital-core.min.css"
   },
   "dependencies": {
-    "bapital-buttons": "^3.0.0",
+    "bapital-buttons": "^3.0.1",
     "bapital-core": "^3.0.0",
     "bapital-grid": "^3.0.0",
     "bapital-icons": "^3.0.0"

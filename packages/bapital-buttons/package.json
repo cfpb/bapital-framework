@@ -1,6 +1,6 @@
 {
   "name": "bapital-buttons",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Capital Framework buttons",
   "less": "src/bapital-buttons.less",
   "style": "bapital-buttons.css",
