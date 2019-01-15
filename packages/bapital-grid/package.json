@@ -1,6 +1,6 @@
 {
   "name": "bapital-grid",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "Capital Framework grid",
   "less": "src/bapital-grid.less",
   "style": "bapital-grid.css",

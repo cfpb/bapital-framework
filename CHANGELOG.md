@@ -1,5 +1,5 @@
 
-## Unreleased (2018-12-04)
+## v2.5.0 (2018-12-04)
 
 #### :rocket: Enhancement
 * `bapital-buttons`
