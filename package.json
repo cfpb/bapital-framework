@@ -16,7 +16,7 @@
   "scripts": {
     "build": "lerna run build --parallel",
     "changelog": "lerna-changelog",
-    "publish": "lerna publish",
+    "publish": "lerna publish --registry http://localhost:4873",
     "version": "lerna-changelog --from v1.0.0 > CHANGELOG.md && git add CHANGELOG.md"
   },
   "changelog": {
